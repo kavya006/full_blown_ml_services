@@ -1,45 +1,51 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import useStyles from './AppBar.css';
 import {withStyles} from '@material-ui/core/styles'
+import {AllInboxRounded} from '@material-ui/icons';
+import { Link, AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
+import InputBase from '@material-ui/core/InputBase';
+
+import SearchIcon from '@material-ui/icons/Search';
+
+import useStyles from './AppBar.css';
+
 
 const SearchAppBar = props => {
   const {classes} = props; 
+  const preventDefault = event => event.preventDefault(); 
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="sticky" color='transparent'>
+        <Toolbar className={classes.toolBar}>
           <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
-            aria-label="open drawer"
+            aria-label="brand name"
           >
-            <MenuIcon />
+            <img src='assets/images/logo_gradient.png' alt='FB-ML' className={classes.logoImage}/>
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
-          </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
+          <div className={classes.otherItemsRoot}>
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon />
+              </div>
+              <InputBase
+                placeholder="Search our catalogue…"
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                }}
+                inputProps={{ 'aria-label': 'search' }}
+              />
             </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
+            <Typography className={classes.menuListRoot}>
+              <Link href='#' onClick={preventDefault} color='inherit'>Catalog</Link>
+              <Link href='#' onClick={preventDefault} color='inherit'>Docs</Link>
+              <Link href='#' onClick={preventDefault} color='inherit'>Sign In</Link>
+            </Typography>  
           </div>
+
         </Toolbar>
       </AppBar>
     </div>

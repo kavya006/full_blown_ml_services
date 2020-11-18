@@ -14,6 +14,12 @@ const useStyles = (theme) => ({
         display: 'block',
       },
     },
+    toolBar: {
+      display: 'flex',
+      position: 'relative',
+      alignItems: 'center',
+      justifyContent: 'space-between'
+    },
     search: {
       position: 'relative',
       borderRadius: theme.shape.borderRadius,
@@ -22,6 +28,7 @@ const useStyles = (theme) => ({
         backgroundColor: fade(theme.palette.common.white, 0.25),
       },
       marginLeft: 0,
+      marginRight: theme.spacing(2),
       width: '100%',
       [theme.breakpoints.up('sm')]: {
         marginLeft: theme.spacing(1),
@@ -47,12 +54,24 @@ const useStyles = (theme) => ({
       transition: theme.transitions.create('width'),
       width: '100%',
       [theme.breakpoints.up('sm')]: {
-        width: '12ch',
+        width: '30ch',
         '&:focus': {
-          width: '20ch',
+          width: '50ch',
         },
       },
     },
+    menuListRoot : {
+      '& > * + *': {
+        marginLeft: theme.spacing(2),
+      }
+    },
+    otherItemsRoot : {
+      display: 'flex',
+      alignItems: 'center'
+    },
+    logoImage : {
+      maxWidth: 40
+    }
   });
 
 export default useStyles; 
