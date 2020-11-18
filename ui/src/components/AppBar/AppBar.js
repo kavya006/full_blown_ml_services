@@ -15,7 +15,7 @@ const SearchAppBar = props => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="sticky" color='transparent'>
         <Toolbar className={classes.toolBar}>
           <IconButton
             edge="start"
@@ -23,10 +23,7 @@ const SearchAppBar = props => {
             color="inherit"
             aria-label="brand name"
           >
-            <AllInboxRounded />
-            <Typography className={classes.title} variant="h6" noWrap>
-              FB - ML
-            </Typography>
+            <img src='assets/images/logo_gradient.png' alt='FB-ML' className={classes.logoImage}/>
           </IconButton>
           <div className={classes.otherItemsRoot}>
             <div className={classes.search}>

@@ -68,6 +68,9 @@ const useStyles = (theme) => ({
     otherItemsRoot : {
       display: 'flex',
       alignItems: 'center'
+    },
+    logoImage : {
+      maxWidth: 40
     }
   });
 
