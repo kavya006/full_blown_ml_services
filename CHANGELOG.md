@@ -1,6 +1,14 @@
-# v1.0.0-alpha
+## v1.0.0-alpha.1
+Add recent_change section to the landing page. 
 
-Started the basic website work and working on the design. 
+* Added the change log and future log to the website.  
+* Reading the data directly from github repo linked to website. 
 
+
+## v1.0.0-alpha
+
+Get the project folder structure ready with templates. Design the about section of landing page. 
+
+* Created the project folder using create-react-app with the template: https://github.com/kavya006/cra-template-react_with_plop_templates 
 * Added the app bar with logo, search bar, catalog, docs and login option
 * Added the brief description to home page and sign up button 
