@@ -2,7 +2,9 @@ const styles = theme => ({
     root: {
         ...theme.mixins.toolbar,
         display: 'flex',
-        minHeight: 'calc(100vh - 64px) !important'
+        minHeight: 'calc(100vh - 64px) !important',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
 
     button: {
@@ -10,7 +12,7 @@ const styles = theme => ({
     }, 
 
     outer: {
-        margin: 'auto'
+        // margin: 'auto'
     }
 });
 

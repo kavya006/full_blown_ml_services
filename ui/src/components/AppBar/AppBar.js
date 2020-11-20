@@ -23,7 +23,7 @@ const SearchAppBar = props => {
             color="inherit"
             aria-label="brand name"
           >
-            <img src='assets/images/logo_gradient.png' alt='FB-ML' className={classes.logoImage}/>
+            <img src='assets/images/logo/logo_gradient.png' alt='FB-ML' className={classes.logoImage}/>
           </IconButton>
           <div className={classes.otherItemsRoot}>
             <div className={classes.search}>

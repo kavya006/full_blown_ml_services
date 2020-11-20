@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {AppBar, HomePage, LatestUpdates} from './components'; 
+import {AppBar, HomePage, LatestUpdates, SneekPreview} from './components'; 
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <AppBar />
       <HomePage />
       <LatestUpdates />
+      <SneekPreview />
     </div>
   );
 }

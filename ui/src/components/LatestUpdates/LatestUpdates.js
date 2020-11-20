@@ -30,7 +30,7 @@ const LatestUpdates = props => {
 
     const {classes} = props;
     return (
-        <section className={classes.root}>
+        <section className={classes.root} aria-label='recent_changes'>
             <Grid container justify='space-evenly' spacing={0}>
                 <Grid item md={12} >
                     <Typography variant='h4'>Our website is continuously improving...</Typography>

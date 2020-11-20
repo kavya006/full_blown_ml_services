@@ -1,0 +1,45 @@
+{ 
+    "services": [
+        {
+            "name": "email classifier", 
+            "link": "#",
+            "description": "This service will help you in classifying emails.",
+            "key": "email_classifier",
+            "photo_link": "/assets/images/services/email.jpeg"
+        }, 
+        {
+            "name": "time series analysis",
+            "link": "#",
+            "description": "This service will analyze the input time series data",
+            "key": "tsa",
+            "photo_link": "/assets/images/services/tsa.jpg"
+        },
+        {
+            "name": "sentiment classifier",
+            "link": "#",
+            "description": "This service will perform a sentiment analysis on the input text",
+            "key": "sentiment_classifier",
+            "photo_link": "/assets/images/services/sentiment.jpeg"
+        },
+        {
+            "name": "tone analyzer",
+            "link": "#",
+            "description": "This service will predict the tone of the input text",
+            "key": "tone_analyzer",
+            "photo_link": "/assets/images/services/tone.png"
+        },
+        {
+            "name": "OCR",
+            "link": "#",
+            "description": "This service will extract text from the input images",
+            "key": "ocr",
+            "photo_link": "/assets/images/services/ocr.jpg"
+        },
+        {
+            "name": "q & a bot",
+            "link": "#",
+            "description": "This service will answer the questions asked on an image",
+            "key": "q_and_a",
+            "photo_link": "/assets/images/services/q_and_a.jpg"
+        }
+]}
