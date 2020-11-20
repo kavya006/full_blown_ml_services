@@ -1,6 +1,6 @@
 const styles = theme => ({
     root: {
-        minHeight: '100vh !important',
+        // minHeight: '100vh !important',
         display: 'flex',
         alignItems: 'center',
     },
@@ -11,7 +11,15 @@ const styles = theme => ({
     paper: {
         height: '70vh',
         padding: 10,
-        overflowY: 'scroll'
+        overflowY: 'auto',
+        scrollbarWidth: "thin",
+        '&::-webkit-scrollbar': { width: "12px", height: "12px" },
+        '&::-webkit-scrollbar-track': {background: 'transparent'},
+        "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "#ccc",
+            borderRadius: "12px",
+            border: "3px solid #eee"
+        }
     },
     control: {
         padding: theme.spacing(2),

@@ -1,3 +1,9 @@
+## v1.0.0-alpha.3
+Add the contact_us section to the landing page. 
+
+* should contain different links for contacting the developers. 
+* add the cookies disclaimer. 
+
 ## v1.0.0-alpha.2
 Add the sneek_preview section to the landing page. 
 
