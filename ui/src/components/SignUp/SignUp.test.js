@@ -1,7 +1,7 @@
 import React from 'react'; 
-import MarkDown from './MarkDown'; 
+import SignUp from './SignUp'; 
 
-describe('MarkDown', () => {
+describe('SignUp', () => {
     it('renders without error', () => {
 
     });

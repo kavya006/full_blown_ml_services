@@ -10,8 +10,9 @@ const styles = theme => ({
     },
     paper: {
         height: '70vh',
-        padding: 10,
-        overflowY: 'auto',
+        padding: theme.spacing(1),
+        margin: theme.spacing(2), 
+        overflow: 'hidden auto',
         scrollbarWidth: "thin",
         '&::-webkit-scrollbar': { width: "12px", height: "12px" },
         '&::-webkit-scrollbar-track': {background: 'transparent'},
@@ -19,7 +20,8 @@ const styles = theme => ({
             backgroundColor: "#ccc",
             borderRadius: "12px",
             border: "3px solid #eee"
-        }
+        },
+        backgroundColor: theme.palette.secondary.dark
     },
     control: {
         padding: theme.spacing(2),

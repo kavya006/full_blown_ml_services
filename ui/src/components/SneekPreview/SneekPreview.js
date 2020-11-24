@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './SneekPreview.css';
 import {withStyles} from '@material-ui/core/styles';
 import {List, ListItem, Paper, Avatar, ListItemAvatar, Typography, Divider, Link} from '@material-ui/core';
+import {Card, CardActionArea, CardContent, CardActions, CardMedia, Button} from '@material-ui/core';
 import serviceList from './preview.json'; 
 
 const SneekPreview = props => {
@@ -17,15 +18,22 @@ const SneekPreview = props => {
                     {serviceList.services.map
                     (service => (
                         <ListItem key={service.key}>
-                            <Link href={service.link} style={{textDecoration: 'none'}}>
-                                <Paper elevation={5} className={classes.scrollItemContainer}>
-                                    <Typography variant='h6' className={classes.serviceName}>{service.name}</Typography>
-                                    <ListItemAvatar>
-                                        <Avatar alt={service.key} src={service.photo_link} className={classes.largeAvatar} variant='square'/>
-                                    </ListItemAvatar>
-                                    <Typography variant='subtitle2'>{service.description}</Typography>
-                                </Paper>
-                            </Link>
+                            <Card>
+                                <CardActionArea className={classes.scrollItemContainer}>
+                                    <CardMedia className={classes.image} component='img' image={service.photo_link} title={service.name} />
+                                    <CardContent className={classes.cardContent}>
+                                        <Typography gutterBottom variant="h5" component="h2" className={classes.serviceName}>
+                                            {service.name}
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" component="p">
+                                            {service.description}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button fullWidth size='small' color='primary' href={service.link}>Learn More</Button>
+                                </CardActions>
+                            </Card>
                         </ListItem>
                     ))}
                 </List>

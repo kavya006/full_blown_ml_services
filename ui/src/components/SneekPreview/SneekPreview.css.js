@@ -7,8 +7,9 @@ const styles = theme => ({
         flexDirection: 'column'
     },
     scrollOuterContainer: {
-        maxHeight: 300, 
+        maxHeight: 350, 
         width: '90%',
+        backgroundColor: theme.palette.secondary.dark
     },
     scrollContainer: {
         display: 'flex',
@@ -24,23 +25,18 @@ const styles = theme => ({
         },
     },
     scrollItemContainer: {
-        height: 230, 
-        width: 240,
-        padding: 10,
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        transition: 'all 0.4s',
-        '&:hover': {
-            transform: 'scale(1.05)',
-        }
+        width: 345,
+        maxHeight: 250,
+        padding: 10
     },
-    largeAvatar: {
-        width: theme.spacing(18),
-        height: theme.spacing(18),
+    cardContent: {
+        height: 200
+    },
+    image: {
+        maxWidth: '100%',
+        height: 140,
         border: '1px solid #eee',
-        background: '#ccc'
+        background: '#ccc',
     }, 
     serviceName: {
         textTransform: 'capitalize',
