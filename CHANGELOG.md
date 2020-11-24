@@ -1,3 +1,10 @@
+## v1.0.0-alpha.3
+Add the sign_up page to the landing page 
+
+* should contain a sign up/sign in page with minimal design
+* should be dialog on top of a backdrop
+
+
 ## v1.0.0-alpha.2
 Add the sneek_preview section to the landing page. 
 

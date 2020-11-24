@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {AppBar, HomePage, LatestUpdates, SneekPreview} from './components'; 
 
