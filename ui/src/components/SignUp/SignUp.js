@@ -45,7 +45,7 @@ const PaperForm = props => {
 };
 
 const SignUp = props => {
-    const [openSignup, setOpenSignup] = React.useState(false); 
+    const {openSignup, setOpenSignup} = props; 
     const [signInCoverStatus, setSignInCoverStatus] = React.useState(false); 
     
     const [email, setEmail] = React.useState('');
@@ -95,7 +95,6 @@ const SignUp = props => {
     
     return (
         <div className={classes.root}>
-            <Button onClick={() => setOpenSignup(openSignup => !openSignup)} variant='contained' color='primary'>Sign Up</Button>
             <Dialog open={openSignup} maxWidth='md' onClose={() => setOpenSignup(false)}>
                 <Paper style={{width: 650, display: 'flex', height: formHeight + 150}}>
                     <PaperForm 

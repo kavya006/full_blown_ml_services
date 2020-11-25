@@ -45,6 +45,28 @@ const styles = theme => ({
     divider: {
         margin: '20px 0',
         width: '50%'
+    },
+
+    circleContentBox : {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    cardRoot: {
+        display: 'flex',
+        width: 350
+    },
+    details: {
+        display: 'flex',
+    },
+    content: {
+        flex: '1 0 auto',
+    },
+    imageCover: {
+        width: 140,
+        height: 140
+    },
+    fontStyle : {
+        width: 140,
     }
 });
 

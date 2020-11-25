@@ -1,7 +1,7 @@
 import React from 'react'; 
-import HomePage from './HomePage'; 
+import RecentChanges from './RecentChanges'; 
 
-describe('HomePage', () => {
+describe('RecentChanges', () => {
     it('renders without error', () => {
 
     });
