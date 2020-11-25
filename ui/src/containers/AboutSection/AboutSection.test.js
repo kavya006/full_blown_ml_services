@@ -1,7 +1,7 @@
 import React from 'react'; 
-import LatestUpdates from './LatestUpdates'; 
+import AboutSection from './AboutSection'; 
 
-describe('LatestUpdates', () => {
+describe('AboutSection', () => {
     it('renders without error', () => {
 
     });

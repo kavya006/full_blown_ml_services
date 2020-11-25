@@ -1,7 +1,7 @@
 import React from 'react'; 
-import AppBar from './AppBar'; 
+import NavigationBar from './NavigationBar'; 
 
-describe('AppBar', () => {
+describe('NavigationBar', () => {
     it('renders without error', () => {
 
     });

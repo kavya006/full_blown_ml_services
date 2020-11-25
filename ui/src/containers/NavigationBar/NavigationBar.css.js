@@ -1,8 +1,10 @@
 import { fade } from '@material-ui/core/styles';
 
-const useStyles = (theme) => ({
+const styles = (theme) => ({
     root: {
       flexGrow: 1,
+      borderBottom: `5px solid ${theme.palette.secondary.dark}`,
+      zIndex: 1000
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -59,6 +61,7 @@ const useStyles = (theme) => ({
           width: '50ch',
         },
       },
+      borderBottom: `2px solid ${theme.palette.primary.dark}`
     },
     menuListRoot : {
       '& > * + *': {
@@ -74,4 +77,4 @@ const useStyles = (theme) => ({
     }
   });
 
-export default useStyles; 
+export default styles; 

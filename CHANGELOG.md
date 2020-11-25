@@ -1,3 +1,19 @@
+## v1.1.0
+Finished the v1 landing page. 
+
+* contains a signup page
+* contains the developer page 
+* contains the sneek preview of the catalog
+* contains a recent changes page 
+* contains the about section 
+* need improvements in styling => left for later 
+
+## v1.0.0-alpha.4
+Add the contact_us section to the landing page. 
+
+* should contain different links for contacting the developers. 
+
+
 ## v1.0.0-alpha.3
 Add the sign_up page to the landing page 
 

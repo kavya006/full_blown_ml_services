@@ -1,5 +1,6 @@
-## v1.0.0-alpha.4
-Add the contact_us section to the landing page. 
+## v1.1.0-alpha.0
+Add the data insights dashboard landing page to website. 
 
-* should contain different links for contacting the developers. 
-* add the cookies disclaimer. 
+* should be able to navigate to the data insights dashboard. 
+* should be able to upload data.
+* should be able to show the data in a tabular format.
